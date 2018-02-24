@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context="com.example.pbjso.memo.MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout1">
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:src="@drawable/memo"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_alignEnd="@+id/linearLayout1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="47dp"
+        android:background="@color/colorPrimary"
+        android:cacheColorHint="@color/colorAccent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout2">
+
+        <Button
+            android:id="@+id/btnWrite"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:drawableLeft="@drawable/ic_create_black_24dp"
+            android:text="Write" />
+
+        <Button
+            android:id="@+id/btnList"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btnWrite"
+            android:background="@drawable/custom_button"
+            android:drawableLeft="@drawable/ic_format_list_bulleted_black_24dp"
+            android:text="List" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:drawableLeft="@drawable/ic_go_back_arrow"
+            android:text="Back" />
+
+    </LinearLayout>
+
+</RelativeLayout>
